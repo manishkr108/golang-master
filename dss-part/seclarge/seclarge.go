@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//this is function to dindf sec large value from the array
 func secMax(arr []int) int {
 	large := arr[0]
 	seclarge := arr[1]
