@@ -22,17 +22,17 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
-      - name: Fetch and merge master (check conflicts)
+      - name: Fetch and try to merge master (no conflicts only)
         run: |
           git fetch origin master:master-temp
 
-          # Try to merge without committing
-          git merge --no-commit --no-ff master-temp || {
-            echo "❌ Merge conflict! Not merging.";
+          # Try merge with unrelated histories allowed
+          git merge --allow-unrelated-histories --no-commit --no-ff master-temp || {
+            echo "❌ Merge conflict or unrelated history merge failed. Skipping.";
             exit 1;
           }
 
-      - name: Commit and push merged changes (if merge successful)
+      - name: Commit and push merged changes (if successful)
         run: |
           git commit -m "✅ Auto-merged changes from master to main"
           git push origin main
