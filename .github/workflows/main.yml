@@ -7,32 +7,35 @@ on:
     branches:
       - master
 
+permissions:
+  contents: write
+
 jobs:
   merge:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout main
+      - name: Checkout main branch
         uses: actions/checkout@v3
         with:
           ref: main
 
-      - name: Configure Git
+      - name: Setup Git Identity
         run: |
           git config user.name "manishkr108"
           git config user.email "manishkr108@users.noreply.github.com"
 
-      - name: Fetch and try to merge master (no conflicts only)
-        run: |
-          git fetch origin master:master-temp
+      - name: Fetch master branch
+        run: git fetch origin master:master-temp
 
-          # Try merge with unrelated histories allowed
-          git merge --allow-unrelated-histories --no-commit --no-ff master-temp || {
-            echo "❌ Merge conflict or unrelated history merge failed. Skipping.";
-            exit 1;
+      - name: Merge master into main (allow unrelated histories)
+        run: |
+          git merge master-temp --allow-unrelated-histories --no-commit --no-ff || {
+            echo "❌ Merge conflict or unrelated histories - skipping auto merge."
+            exit 1
           }
 
-      - name: Commit and push merged changes (if successful)
+      - name: Commit and push if merge successful
         run: |
-          git commit -m "✅ Auto-merged changes from master to main"
+          git commit -m "✅ Auto-merged master into main"
           git push origin main
