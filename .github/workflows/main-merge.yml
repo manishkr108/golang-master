@@ -1,0 +1,39 @@
+name: Auto Merge master → main
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v3
+        with:
+          ref: main
+
+      - name: Configure Git identity
+        run: |
+          git config user.name "manishkr108"
+          git config user.email "manishkr108@users.noreply.github.com"
+
+      - name: Fetch master branch
+        run: git fetch origin master:master-temp
+
+      - name: Merge master into main (skip if conflict)
+        run: |
+          git merge master-temp --allow-unrelated-histories --no-commit --no-ff || {
+            echo "❌ Merge conflict detected. Merge aborted."
+            exit 1
+          }
+
+      - name: Commit and push if merge successful
+        run: |
+          git commit -m "✅ Auto-merged master into main"
+          git push origin main
