@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
-func test() {
+//this is main file for enter
+
+func main() {
 	fmt.Println("hello world")
 }
