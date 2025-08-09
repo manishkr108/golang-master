@@ -1,5 +1,5 @@
-# go-programming-2024
-go-programming-2024
+# go-programming-2025
+go-programming-2025
 
 
 <h1>STAR</h1>
