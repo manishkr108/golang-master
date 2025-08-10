@@ -227,4 +227,16 @@ func main() {
 	fmt.Print("the number of digit count ", counts)
 	fmt.Print("the sum of digit ", sum)
 
+	// Do while loop
+	nu := 0
+	for {
+		// Work
+		fmt.Println(nu)
+
+		if nu == 10 {
+			break
+		}
+		nu++
+	}
+
 }

@@ -15,6 +15,8 @@ func main() {
 	var name string = "Manish"
 	age := 25
 	var isAdmin = true
+	var foo, bar string = "Hello", "World"
+	fmt.Println(foo, bar)
 
 	fmt.Println("Name:", name)
 	fmt.Println("Age:", age)
