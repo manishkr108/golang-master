@@ -38,7 +38,7 @@ func main() {
 
 	// Create an empty slice
 	var x []int
-	fmt.Println(reflect.ValueOf(x).Kind())
+	fmt.Println("refrelct", reflect.ValueOf(x).Kind())
 
 	// Creating a slice using the make function
 	var y = make([]string, 10, 20)
@@ -83,5 +83,17 @@ func main() {
 
 	g = append(g, h...)
 	fmt.Println(g)
+
+	//slice to array convert
+
+	slices := []int{1, 2, 3}
+
+
+	var ar [3]int
+	fmt.Printf("nums slice: %#v\n", ar)
+	fmt.Println("The type is", reflect.TypeOf(ar).Kind())
+
+	copy(ar[:], slices)
+	fmt.Println(slices, ar)
 
 }
