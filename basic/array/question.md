@@ -21,7 +21,7 @@ Can an array be a key in a map in Go? Why?
 
 
 
-2. Intermediate Level – Practical Use
+<h3>2. Intermediate Level – Practical Use</h3>
 How do you pass an array to a function? Is it passed by value or reference?
 
 How do you pass a pointer to an array to a function?
@@ -44,7 +44,7 @@ How do you create a multidimensional array in Go? Give an example.
 
 
 
-3. Advanced Level – Deep Understanding
+<h3>3. Advanced Level – Deep Understanding</h3>
 Explain the memory layout of arrays in Go. Are they contiguous?
 
 What is the difference between an array pointer (*[n]T) and a slice ([]T) in Go?
@@ -70,7 +70,7 @@ How do you pass a large array efficiently to a goroutine without copying all ele
 
 
 
-4. Expert Level – Problem-Solving with Arrays
+<h3>4. Expert Level – Problem-Solving with Arrays</h3>
 Implement a function to remove duplicates from a sorted array (in-place).
 
 Implement a function to find the second largest number in an array.
