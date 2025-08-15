@@ -1,4 +1,4 @@
-1. Basic Level – Fundamentals
+<h1>1. Basic Level – Fundamentals</h1>
 What is an array in Go and how is it different from a slice?
 
 How do you declare an array in Go? Give examples of fixed-size and inferred-size arrays.
