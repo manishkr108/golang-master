@@ -145,3 +145,11 @@ When to Use Which
 Manual function → Faster, more control, and no extra imports.
 
 reflect.DeepEqual → Easy, works for any type (but a bit slower).
+
+
+1. What Does “Contiguous Memory” Mean?
+All the elements of an array are stored next to each other in memory, with no gaps in between.
+
+If you know the memory address of the first element, you can calculate the address of any element with:
+
+address_of_element = base_address + (index × size_of_element)
