@@ -22,6 +22,7 @@ import "fmt"
 			arr[start], arr[i] = arr[i], arr[start]
 		}
 
+		
 	}
 	backtrack(0)
 	return result
