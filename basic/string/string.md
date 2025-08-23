@@ -139,3 +139,48 @@ for i := 0; i < len(s); i++ {
 for i, r := range s {
     fmt.Printf("%d: %c\n", i, r)
 }
+
+
+How do you efficiently concatenate multiple strings in a loop? 
+Why is strings.Builder better than +?
+
+Problem with + (string concatenation)
+
+Strings in Go are immutable.
+When you do this:
+
+result := ""
+for i := 0; i < 5; i++ {
+    result += "x"
+}
+
+
+What actually happens:
+
+Each += creates a new string (copies old + new).
+
+Time complexity becomes O(n²) for big concatenations (lots of re-copying).
+
+Inefficient in memory usage.
+
+Solution: strings.Builder
+
+Go provides strings.Builder
+ for efficient concatenation.
+
+ var sb strings.Builder
+
+    for i := 0; i < 5; i++ {
+        sb.WriteString("x")
+    }
+
+    result := sb.String()
+    fmt.Println(result) // "xxxxx"
+
+Why strings.Builder is better:
+
+No repeated copying: It grows an internal buffer (amortized O(n)).
+
+Efficient memory use: You can Grow(n) upfront to avoid resizing.
+
+Safe to use: Once you call String(), you shouldn’t reuse it, ensuring correctness.
