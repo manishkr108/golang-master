@@ -2,12 +2,13 @@ package main
 
 import "fmt"
 
-	func permutations(arr []int) [][]int {
+func permutations(arr []int) [][]int {
 	var result [][]int
 
 	var backtrack func(int)
 
 	backtrack = func(start int) {
+
 		if start == len(arr) {
 			prim := make([]int, len(arr))
 
@@ -22,7 +23,6 @@ import "fmt"
 			arr[start], arr[i] = arr[i], arr[start]
 		}
 
-		
 	}
 	backtrack(0)
 	return result
