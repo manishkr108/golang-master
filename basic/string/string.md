@@ -168,7 +168,7 @@ Solution: strings.Builder
 Go provides strings.Builder
  for efficient concatenation.
 
- var sb strings.Builder
+    var sb strings.Builder
 
     for i := 0; i < 5; i++ {
         sb.WriteString("x")
@@ -184,3 +184,96 @@ No repeated copying: It grows an internal buffer (amortized O(n)).
 Efficient memory use: You can Grow(n) upfront to avoid resizing.
 
 Safe to use: Once you call String(), you shouldn’t reuse it, ensuring correctness.
+
+Real-World Use Cases
+1. Building Dynamic SQL Queries
+var b strings.Builder
+b.WriteString("SELECT * FROM users WHERE 1=1")
+
+if active := true; active {
+	b.WriteString(" AND status = 'active'")
+}
+if country := "IN"; country != "" {
+	b.WriteString(" AND country = '")
+	b.WriteString(country)
+	b.WriteString("'")
+}
+
+query := b.String()
+fmt.Println(query)
+
+
+
+
+Why len(str) is O(1)
+
+Recall the internal structure of a string in Go:
+
+type stringStruct struct {
+    str unsafe.Pointer  // pointer to the byte array
+    len int             // number of bytes
+}
+
+
+The length is already stored in the len field.
+
+When you call len(str), Go simply returns that integer field — it doesn’t need to count bytes or scan memory.
+
+That’s why len(str) is constant time O(1).
+
+
+Example (what happens internally)
+s := "Hello 😀"
+fmt.Println(len(s))   // 8 bytes
+
+
+At runtime:
+
+s = (pointer, len=8)
+
+len(s) just returns the len field → 8.
+
+No traversal of the string happens.
+
+Rule of thumb:
+
+If you’re working with bytes, it’s usually O(1).
+
+If you’re working with runes/characters, it’s usually O(n) (because of UTF-8 decoding).
+
+What happens if you modify a []byte obtained from a string?
+s := "hello" b := []byte(s) b[0] = 'H' fmt.Println(string(b)) // ???
+
+    s := "hello"
+    b := []byte(s)  // copy string bytes into new slice
+    b[0] = 'H'      // modify the first byte
+    fmt.Println(string(b)) 
+
+    Step 1: s := "hello"
+
+In Go, a string is immutable. You cannot modify its bytes directly.
+
+Internally: "hello" is stored as a read-only byte array ([104 101 108 108 111] in ASCII).
+
+Step 2: b := []byte(s)
+
+This creates a copy of the string's bytes into a new []byte slice.
+
+So b = [104 101 108 108 111] (the same bytes, but mutable).
+
+Step 3: b[0] = 'H'
+
+'H' has ASCII value 72.
+
+Now b = [72 101 108 108 111] → which corresponds to "Hello".
+
+Step 4: fmt.Println(string(b))
+
+Converts the modified []byte back into a string.
+
+Key point:
+
+The original string s is untouched (still "hello").
+
+The slice b is a new copy, so modifying it doesn’t break immutability.
+
