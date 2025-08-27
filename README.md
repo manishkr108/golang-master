@@ -52,32 +52,32 @@ go-examples-spa/<br>
 │── examples/         # Go example codes (basic to advanced)<br>
 │── README.md<br>
 
-⚡ Quick Start
+⚡ Quick Start<br>
 1️⃣ Clone repo
 git clone (https://github.com/manishkr108/golang-master)
-cd go-examples-spa
+cd go-examples-spa<br>
 
 2️⃣ Start Backend (Go)
 cd backend
-go run main.go
+go run main.go<br>
 
 3️⃣ Start Frontend (React)
 cd frontend
 npm install
-npm run dev
+npm run dev<br>
 
 
-Open 👉 http://localhost:5173
+Open 👉 http://localhost:5173 <br>
 
-🧑‍💻 Example Go Programs
+🧑‍💻 Example Go Programs <br>
 
-Basics: Variables, Loops, Functions, Arrays, Maps
+Basics: Variables, Loops, Functions, Arrays, Maps <br>
 
-Intermediate: Structs, Interfaces, Concurrency (goroutines, channels)
+Intermediate: Structs, Interfaces, Concurrency (goroutines, channels) <br>
 
-Advanced: DSA (Linked List, Stack, Queue, Tree, Graph)
+Advanced: DSA (Linked List, Stack, Queue, Tree, Graph) <br>
 
-(Examples available via dropdown in UI)
+(Examples available via dropdown in UI) <br>
 
 📦 Deployment
 
