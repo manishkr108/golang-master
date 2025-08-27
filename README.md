@@ -40,17 +40,17 @@ Other: REST API for code execution
 🌐 Deployed online – Accessible anywhere
 
 📂 Project Structure
-go-examples-spa/
-│── backend/          # Golang server (code execution API)
-│   ├── main.go
-│   ├── runner.go
-│── frontend/         # React + TypeScript UI
-│   ├── src/
-│   │   ├── components/   # Dropdown, Editor, Output, etc.
-│   │   ├── App.tsx
-│   │   ├── api/backend.ts
-│── examples/         # Go example codes (basic to advanced)
-│── README.md
+go-examples-spa/<br>
+│── backend/          # Golang server (code execution API)<br>
+│   ├── main.go<br>
+│   ├── runner.go<br>
+│── frontend/         # React + TypeScript UI<br>
+│   ├── src/<br>
+│   │   ├── components/   # Dropdown, Editor, Output, etc.<br>
+│   │   ├── App.tsx<br>
+│   │   ├── api/backend.ts<br>
+│── examples/         # Go example codes (basic to advanced)<br>
+│── README.md<br>
 
 ⚡ Quick Start
 1️⃣ Clone repo
