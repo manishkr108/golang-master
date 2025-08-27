@@ -1,10 +1,10 @@
 🚀 Go Examples SPA – Interactive Code Playground
 
-An interactive Go (Golang) code playground built with React + Go backend, featuring:
-✅ Real-time code execution
-✅ Dropdown of Go examples (basic → advanced, including DSA)
-✅ Editable code editor with live output
-✅ Deployed on Railway for instant access
+An interactive Go (Golang) code playground built with React + Go backend, featuring:<br>
+✅ Real-time code execution<br>
+✅ Dropdown of Go examples (basic → advanced, including DSA)<br>
+✅ Editable code editor with live output<br>
+✅ Deployed on Railway for instant access<br>
 
 🔥 Live Demo
 
