@@ -8,7 +8,7 @@ An interactive Go (Golang) code playground built with React + Go backend, featur
 
 🔥 Live Demo
 
-🌐 Try it https://lnkd.in/g73YbXU9
+🌐 Try it [https://lnkd.in/g73YbXU9](https://go-frontend-frontend.up.railway.app/)
 
 📸 Preview
 
