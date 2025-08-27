@@ -1,10 +1,10 @@
 🚀 Go Examples SPA – Interactive Code Playground
 
-An interactive Go (Golang) code playground built with React + Go backend, featuring:
-✅ Real-time code execution
-✅ Dropdown of Go examples (basic → advanced, including DSA)
-✅ Editable code editor with live output
-✅ Deployed on Railway for instant access
+An interactive Go (Golang) code playground built with React + Go backend, featuring:<br>
+✅ Real-time code execution<br>
+✅ Dropdown of Go examples (basic → advanced, including DSA)<br>
+✅ Editable code editor with live output<br>
+✅ Deployed on Railway for instant access<br>
 
 🔥 Live Demo
 
@@ -40,44 +40,44 @@ Other: REST API for code execution
 🌐 Deployed online – Accessible anywhere
 
 📂 Project Structure
-go-examples-spa/
-│── backend/          # Golang server (code execution API)
-│   ├── main.go
-│   ├── runner.go
-│── frontend/         # React + TypeScript UI
-│   ├── src/
-│   │   ├── components/   # Dropdown, Editor, Output, etc.
-│   │   ├── App.tsx
-│   │   ├── api/backend.ts
-│── examples/         # Go example codes (basic to advanced)
-│── README.md
+go-examples-spa/<br>
+│── backend/          # Golang server (code execution API)<br>
+│   ├── main.go<br>
+│   ├── runner.go<br>
+│── frontend/         # React + TypeScript UI<br>
+│   ├── src/<br>
+│   │   ├── components/   # Dropdown, Editor, Output, etc.<br>
+│   │   ├── App.tsx<br>
+│   │   ├── api/backend.ts<br>
+│── examples/         # Go example codes (basic to advanced)<br>
+│── README.md<br>
 
-⚡ Quick Start
+⚡ Quick Start<br>
 1️⃣ Clone repo
 git clone (https://github.com/manishkr108/golang-master)
-cd go-examples-spa
+cd go-examples-spa<br>
 
 2️⃣ Start Backend (Go)
 cd backend
-go run main.go
+go run main.go<br>
 
 3️⃣ Start Frontend (React)
 cd frontend
 npm install
-npm run dev
+npm run dev<br>
 
 
-Open 👉 http://localhost:5173
+Open 👉 http://localhost:5173 <br>
 
-🧑‍💻 Example Go Programs
+🧑‍💻 Example Go Programs <br>
 
-Basics: Variables, Loops, Functions, Arrays, Maps
+Basics: Variables, Loops, Functions, Arrays, Maps <br>
 
-Intermediate: Structs, Interfaces, Concurrency (goroutines, channels)
+Intermediate: Structs, Interfaces, Concurrency (goroutines, channels) <br>
 
-Advanced: DSA (Linked List, Stack, Queue, Tree, Graph)
+Advanced: DSA (Linked List, Stack, Queue, Tree, Graph) <br>
 
-(Examples available via dropdown in UI)
+(Examples available via dropdown in UI) <br>
 
 📦 Deployment
 
