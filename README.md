@@ -1,61 +1,118 @@
-# go-programming-2025
-go-programming-2025
+🚀 Go Examples SPA – Interactive Code Playground
+
+An interactive Go (Golang) code playground built with React + Go backend, featuring:<br>
+✅ Real-time code execution<br>
+✅ Dropdown of Go examples (basic → advanced, including DSA)<br>
+✅ Editable code editor with live output<br>
+✅ Deployed on Railway for instant access<br>
+
+🔥 Live Demo
+
+🌐 Try it [https://lnkd.in/g73YbXU9](https://go-frontend-frontend.up.railway.app/)
+
+📸 Preview
 
 
-<h1>STAR</h1>
-<h1 align="center">Hi 👋, I'm Manish Kumar</h1>
-<h3 align="center">A passionate Software developer from India</h3>
+(Replace with your GIF/MP4 project demo)
 
-<img align="center" alt="coding gif" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" />
+🛠️ Tech Stack
+
+Frontend: React + TypeScript + TailwindCSS + Vite
+
+Backend: Go (Golang)
+
+Editor: Monaco Editor (VS Code-like experience)
+
+Deployment: Railway
+
+Other: REST API for code execution
+
+🎯 Features
+
+🎛 Dropdown selector – Browse Go examples (Loops, Arrays, Maps, Structs, DSA, etc.)
+
+✍️ Interactive code editor – Edit and run Go code instantly
+
+⚡ Fast execution – Backend compiles and runs Go code in real time
+
+📊 Organized examples – Beginner → Advanced level Go snippets
+
+🌐 Deployed online – Accessible anywhere
+
+📂 Project Structure
+go-examples-spa/<br>
+│── backend/          # Golang server (code execution API)<br>
+│   ├── main.go<br>
+│   ├── runner.go<br>
+│── frontend/         # React + TypeScript UI<br>
+│   ├── src/<br>
+│   │   ├── components/   # Dropdown, Editor, Output, etc.<br>
+│   │   ├── App.tsx<br>
+│   │   ├── api/backend.ts<br>
+│── examples/         # Go example codes (basic to advanced)<br>
+│── README.md<br>
+
+⚡ Quick Start<br>
+1️⃣ Clone repo
+git clone (https://github.com/manishkr108/golang-master)
+cd go-examples-spa<br>
+
+2️⃣ Start Backend (Go)
+cd backend
+go run main.go<br>
+
+3️⃣ Start Frontend (React)
+cd frontend
+npm install
+npm run dev<br>
 
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=manishkr108&label=Profile%20views&color=0e75b6&style=flat" alt="manishkr108" /> </p>
+Open 👉 http://localhost:5173 <br>
 
+🧑‍💻 Example Go Programs <br>
 
+Basics: Variables, Loops, Functions, Arrays, Maps <br>
 
+Intermediate: Structs, Interfaces, Concurrency (goroutines, channels) <br>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=manishkr108" alt="manishkr108" /></a> </p>
+Advanced: DSA (Linked List, Stack, Queue, Tree, Graph) <br>
 
-- 🔭 I’m currently working on **Go Lang, JavaScript, Reactjs, PHP, LARAVEL, REST API, MySQL**.
+(Examples available via dropdown in UI) <br>
 
-- 👨‍💻 All of my projects are available at [https://github.com/manishkr108])
+📦 Deployment
 
-- 💬 Ask me about **Frontend Development, DSA**.
+The app is deployed on Railway for production use:
 
-- 📫 How to reach me **manishrajpn10@gmail.com**
+Frontend: React app
 
+Backend: Go API service
 
+🌟 Roadmap
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/manishk799/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="manishkr108" height="30" width="40" /></a>
-</p>
+ Add syntax highlighting for output
 
+ Add support for Go modules & packages
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://golang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="40" height="40"/> </a> <a href="https://laravel.com/" target="_blank" rel="noreferrer"> <img src="https://laravel.com/img/logomark.min.svg" alt="laravel" width="40" height="40"/> </a> <a href="https://mariadb.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.nginx.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.oracle.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://redis.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="redis" width="40" height="40"/> </a> <a href="https://redux.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://webpack.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="40" height="40"/> </a> </p>
+ Add more DSA examples
 
+ Add Docker support for local setup
 
-<picture>
-  <source
-    srcset="https://github-readme-stats.vercel.app/api?username=manishkr108&show_icons=true&media="(prefers-color-scheme: dark)"/>
-  <source
-    srcset="https://github-readme-stats.vercel.app/api?username=manishkr108&show_icons=true& media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-  />
-</picture>
+🤝 Contributing
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=manishkr108&theme=dark&show_icons=true&locale=en&layout=compact" alt="manishkr108" /></p>
+Contributions are welcome! 🎉
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=manishkr108&theme=dark&show_icons=true&locale=en" alt="manishkr108" /></p>
+Fork repo
 
+Create feature branch
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=manishkr108&theme=dark&alt="manishkr108" /></p>
+Submit PR
 
-### 🔝 Top Contributed Repo
+📜 License
 
-![](https://github-contributor-stats.vercel.app/api?username=manishkr108&limit=5&theme=dark&combine_all_yearly_contributions=true)
+MIT License – free to use & modify.
 
+👨‍💻 Author
 
-This is basic to advance master concept of golang
-
-Learn Golang as if you were the author of the language.
+👋 Built by Manish Raj
+🔗 LinkedIn https://www.linkedin.com/in/manishk799/
+ | GitHub
