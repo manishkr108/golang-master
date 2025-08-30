@@ -334,3 +334,51 @@ Takeaway
 Think of Go’s map as a carefully tuned hash table: buckets of 8, randomized iteration, incremental growth, and great cache behavior. Use it freely; sort only when you truly need order; guard it in concurrent writes.
 
 If this helped, drop a “map ❤️” in the comments and I’ll post a follow-up with visuals of buckets, overflow, and tophash!
+
+🟢 1. Inside a Single Bucket (fixed at 8 slots)
+
+A bucket itself is like a little box.
+
+Each box has 8 fixed slots for key-value pairs.
+
+That number (8) never changes.
+
+If more than 8 items land in the same bucket (due to hash collisions), Go attaches an overflow bucket.
+
+👉 Think: 1 bucket = 8 slots max. Always.
+
+
+🟢 2. Number of Buckets in the Map (dynamic, power of 2)
+
+A map is made of many such buckets.
+
+The number of buckets in the map starts small (1, 2, …) and grows dynamically.
+
+Whenever the map gets too full, Go doubles the number of buckets (power of 2 rule).
+
+👉 Think: map = collection of buckets.
+👉 The number of buckets = grows like 1, 2, 4, 8, 16, 32 ….
+
+
+🔎 Putting It Together
+
+Example with 20 elements:
+
+Start: 1 bucket (8 slots)
+
+Can store up to 8 items.
+
+Insert 9th item → Resize
+
+Map now has 2 buckets (2 × 8 = 16 slots total).
+
+Insert 17th item → Resize
+
+Map now has 4 buckets (4 × 8 = 32 slots total).
+
+
+✅ Final Answer
+
+“Each bucket can store up to 8 key-value pairs” → means each bucket box has 8 slots max (fixed).
+
+“Power of 2” → refers to the number of buckets in the map (dynamic, doubles when resizing).
